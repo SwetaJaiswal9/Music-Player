@@ -1,0 +1,402 @@
+/*We have used Desktop first approach*/
+
+/*max-width: 1200px*/
+@media screen and (max-width: 1200px) {
+	
+	#Favourites {
+		display: none;
+	}
+	
+	#Search-Bar {
+		width: 30%;
+		margin-left: 19rem;
+		margin-top: 1.5rem;
+	}
+
+	#Search-Bar i{
+		visibility: hidden;
+	}
+
+	input {
+		font-size: 11px;
+	}
+
+	#Notification-bell img{
+
+		margin-left: 4rem;
+	}
+
+	#Login{
+
+		margin-left: 5.8rem;
+		margin-top: 0.6rem;
+	}
+
+	#sym-music i{
+
+		display: none ;
+	}
+
+	#sym-volume i{
+
+		display: none ;
+	}
+
+	#sym-expand i{
+
+		display: none ;
+	}
+
+	#symbols span img{
+
+		display: none ;
+	}
+}
+
+
+/*max-width: 900px*/
+@media screen and (max-width: 900px) {
+
+	#responsive-button {
+		display: block;
+	}
+
+	#Search-Bar {
+		margin-left: 11rem;
+		margin-top: 1.6rem;
+	}
+
+	aside{
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: -1rem;
+	}
+
+	main{
+		width: 100%;
+	}
+
+	#Carousel div img{
+
+		height: 10rem;
+		width: 15rem;
+	}
+
+	#Notification-bell img{
+
+		margin-left: 1rem;
+	}
+
+	#Login{
+
+		margin-left: 3rem;
+		margin-top: 0.6rem;
+	}
+
+	#player-container div img{
+
+		height: 3.2rem;
+		width: 3.2rem;
+		margin-left: 0.5rem;
+		margin-top: 0.1rem;
+		vertical-align: middle;
+		position: relative;
+	}
+
+	#player-container span{
+
+		position: absolute;
+		top: 0.4rem;
+		left: 6rem;
+		margin-left: 0rem;
+		margin-top: 0.2rem;
+		letter-spacing: 0.1rem;
+	}
+
+	#symbols div{
+
+		position: absolute;
+		margin-left: 10rem;
+		margin-top: -3rem;
+		font-size: 0.8rem;
+	}
+
+	#symbols div img{
+
+		margin-left: 15rem; 
+		margin-top: -0.8rem;
+		height: 5.4rem;
+		width: 16rem;
+	}
+
+	#sym-add i{
+
+		margin-left: 1.1rem;
+	}
+
+	#sym-pause i{
+
+		margin-left: 22rem;
+		margin-top: -0.8rem; 
+		font-size: 1.8rem;
+	}
+
+	#sym-forward i{
+
+		margin-left: 27rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;
+	}
+
+	#sym-backward i{
+
+		margin-left: 18rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;
+	}
+
+	#sym-random i{
+
+		margin-left: 15rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;
+	}
+
+	#sym-repeat i{
+
+		margin-left: 30rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;	
+	}
+
+	#start-time{
+
+		font-size: 0.8rem; 
+		position: absolute; 
+		left: 15.6rem; 
+		top: 5.9rem;
+	}
+
+	#end-time{
+
+		font-size: 0.8rem; 
+		position: absolute; 
+		left: 31rem; 
+		top: 5.9rem;
+	}
+}
+
+
+/*max-width: 700px*/
+@media screen and (max-width: 700px) {
+
+	#Search-Bar{
+		margin-left: 3.4rem;
+		margin-top: 1.5rem;
+	}
+
+	input[type="text"]{
+
+		width: 11rem;
+		height: 1.2rem;
+		font-weight: 500;
+	}
+
+	#Notification-bell img{
+
+		height: 39px;
+		width: 39px;
+		margin-left: 1.2rem;
+	}
+
+	#Login{
+
+		margin-left: 2.8rem;
+		margin-top: 0.8r1m;
+	}
+
+	#Login img{
+
+		height: 2.8rem;
+		width: 2.8rem;
+	}
+
+	#Carousel div img{
+
+		height: 7rem;
+		width: 12rem;
+	}
+
+	#symbols div img{
+
+		margin-left: 8.5rem; 
+		margin-top: -0.8rem;
+		height: 5.4rem;
+		width: 16rem;
+	}
+
+	#sym-pause i{
+
+		margin-left: 15.5rem;
+		margin-top: -0.8rem; 
+		font-size: 1.8rem;
+	}
+
+	#sym-forward i{
+
+		margin-left: 20.5rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;
+	}
+
+	#sym-backward i{
+
+		margin-left: 11.5rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;
+	}
+
+	#sym-random i{
+
+		margin-left: 8.6rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;
+	}
+
+	#sym-repeat i{
+
+		margin-left: 23rem; 
+		margin-top: -1rem;
+		font-size: 1.1rem;	
+	}
+
+	#start-time{
+
+		font-size: 0.8rem; 
+		position: absolute; 
+		left: 9.6rem; 
+		top: 5.9rem;
+	}
+
+	#end-time{
+
+		font-size: 0.8rem; 
+		position: absolute; 
+		left: 23.8rem; 
+		top: 5.9rem;
+	}
+}
+
+
+/*max-width: 550px*/
+@media screen and (max-width: 550px) {
+
+	#Logo img{
+
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+
+	#music_player_name{
+
+		height: 25px;
+		width: 120px;
+	}
+
+	#Search-Bar{
+
+		margin-left: 1rem;
+		margin-top: 0.5rem;
+	}
+
+	input[type="text"]{
+
+		width: 9rem;
+		height: 1.1rem;
+		font-weight: 400;
+	}
+
+	#Notification-bell img{
+
+		height: 34px;
+		width: 34px;
+		margin-left: 1.2rem;
+	}
+
+	#Login{
+
+		margin-left: 1.1rem;
+		margin-top: 0.9rem;
+	}
+
+	#Login img{
+
+		height: 2.2rem;
+		width: 2.2rem;
+	}
+
+	#symbols div img{
+
+		margin-left: 5.8rem; 
+		margin-top: -0.1rem;
+		height: 3.6rem;
+		width: 10rem;
+	}
+
+	#sym-pause i{
+
+		margin-left: 10rem;
+		margin-top: -0.7rem; 
+		font-size: 1.3rem;
+	}
+
+	#sym-forward i{
+
+		margin-left: 13em; 
+		margin-top: -1rem;
+		font-size: 1rem;
+	}
+
+	#sym-backward i{
+
+		margin-left: 7.6rem; 
+		margin-top: -1rem;
+		font-size: 1rem;
+	}
+
+	#sym-random i{
+
+		margin-left: 5.8rem; 
+		margin-top: -1rem;
+		font-size: 1rem;
+	}
+
+	#sym-repeat i{
+
+		margin-left:14.7rem; 
+		margin-top: -1rem;
+		font-size: 1rem;	
+	}
+
+	#start-time{
+
+		position: absolute; 
+		left: 6rem; 
+		top: 5.56rem;
+	}
+
+	#end-time{
+
+		position: absolute; 
+		left: 16rem; 
+		top: 5.56rem;
+	}
+
+	aside{
+		width: 70%;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: -1rem;
+	}
+}

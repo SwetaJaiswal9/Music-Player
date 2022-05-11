@@ -1,0 +1,723 @@
+body{
+
+	background-image: url("Images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*BODY HEADER*/
+
+#top-bar{
+
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	color: white;
+	font-family: serif;
+	font-weight: 300;
+	font-size: 1.05rem;
+	background-color:  #121f53;
+	margin-top: -0.5rem;
+	margin-left: -0.5rem;
+	z-index: 2;
+}
+
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#Logo{
+
+	margin-top: 0.6rem;
+	margin-left: 1.8rem;
+}
+
+#Logo img{
+
+	height: 3.1rem;
+	width: 3.1rem;
+	animation: rotating 1s ease-in-out infinite;
+}
+
+#music_player_name{
+
+	height: 35px;
+	width: 170px;
+	margin-left: 0.2rem;
+	margin-top: 1.5rem;
+}
+
+#Favourites{
+
+	margin-left: 13rem;
+	margin-top: 1.5rem;
+}
+
+#Favourites a{
+
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-size: 19px;
+}
+
+#Search-Bar{
+
+	margin-left: 22rem;
+	margin-top: 1.4rem;
+}
+
+input[type="text"]{
+
+	background-color: white;
+	border-radius: 4px;
+	width: 13rem;
+	height: 1.5rem;
+	border: none;
+	color: black;
+	font-weight: 600;
+}
+
+@keyframes ringBell{
+
+	0%{
+		transform: rotate(-15deg);
+	}
+	50%{
+		transform: rotate(15deg);
+	}
+	100%{
+		transform: rotate(-15deg);
+	}
+}
+
+#Notification-bell img{
+
+	height: 44px;
+	width: 44px;
+	margin-left: 6rem;
+	margin-top: 1rem;
+	animation: ringBell 0.5s ease-in-out infinite;
+}
+
+#Login{
+
+	margin-left: 6rem;
+	margin-top: 0.4rem;
+}
+
+#Login img{
+
+	height: 3.4rem;
+	width: 3.4rem;
+	border-radius: 50%;
+}
+
+
+/*BODY MAIN*/
+
+main{
+
+	width: 68%;
+	display: inline-block;
+}
+
+
+/*Sections*/
+
+section{
+
+	width:auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 4vh;
+}
+
+.section-body{
+
+	width:100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.section-heading{
+
+	color: white;
+	font-family: serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+section div{
+
+	margin: 1.2vh;
+}
+
+
+/*Carousel Section*/
+
+#Carousel div{
+
+	margin-top: 4rem;
+	transition: all 1sec ease-in-out ;
+}
+
+#Carousel div img{
+
+	height: 14rem;
+	width: 19rem;
+}
+
+#Carousel div img:hover{
+
+	transform: scale(1.5);
+}
+
+
+/*Latest-Release Section*/
+
+#Latest-Release div{
+ 
+ 	margin-right: 16rem;
+ 	position: relative;
+}
+
+#Latest-Release div img{
+
+	height: 8rem;
+	width: 8rem;
+}
+
+#Latest-Release div img:hover{
+
+	opacity: 60%;
+}
+
+#Latest-Release div audio{
+
+	
+	height: 1.2rem;
+	width: 7rem;
+}
+
+.LR-flex{
+
+	display: flex;
+	flex-direction: column;
+}
+
+#Latest-Release span{
+
+	position: absolute;
+	top: 1rem;
+	left: 9rem;
+}
+
+.Select-options select{
+
+	font-size: 0.8rem;
+	width: 1.2rem;
+	position: absolute;
+	top: 0.1rem;
+	left: 22rem;
+}
+
+
+/*Popular-artists Section*/
+
+#Popular-artists div img{
+
+	height: 7.5rem;
+	width: 7.5rem;
+	border-radius: 50%;
+	position: relative;
+}
+
+.section-body div i{
+
+	position: absolute;
+	margin-top: -7rem;
+	margin-left: -1rem;
+	font-size: 2rem;
+	color: transparent;
+}
+
+/*#Popular-artists div img:hover .section-body div i{
+
+	color: white;
+}*/
+
+#Popular-artists div img:hover{
+
+	opacity: 60%;
+}
+
+
+/*Stations Section*/
+
+#Stations{
+
+	background-image: linear-gradient(to right, orange, deeppink, hotpink, red);
+}
+
+#Stations div{
+
+	justify-content: center;
+	margin: 1.8vh;
+}
+
+.all-stations{
+
+	height: 6.4rem;
+	width: 6.4rem;
+	border-radius: 50%;
+	opacity: 70%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+#Station-Cover{
+
+	background-image: url("Images/Stations-Cover.jpg");
+	height: 6.4rem;
+	width: 8rem;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+#Station-1{
+
+	background-image: url("Images/Stations/Love.jpg");
+}
+
+#Station-2{
+
+	background-image: url("Images/Stations/Retro.jpg");
+}
+
+#Station-3{
+
+	background-image: url("Images/Stations/Chill.jpg");
+}
+
+#Station-4{
+
+	background-image: url("Images/Stations/Workout.jpg");
+}
+
+#Station-5{
+
+	background-image: url("Images/Stations/Rock.jpg");
+}
+
+#Station-6{
+
+	background-image: url("Images/Stations/Pop.jpg");
+}
+
+.Station-name{
+
+	margin-top: 2.4rem;
+	color: white;
+	font-size: 1rem;
+	font-weight: 100px;
+}
+
+
+/*Music-by-category Section*/
+
+#Music-by-category{
+
+	font-size: 1rem;	
+}
+
+#Music-by-category div{
+
+	margin-left: 3vh;
+}
+
+#Music-by-category div:hover{
+
+	background-size: 150%;
+}
+
+#category-1{
+
+	height: 12rem;
+	width: 18rem;
+	background-image: url("Images/Party.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+#category-2{
+
+	height: 12rem;
+	width: 18rem;
+	background-image: url("Images/Love.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+#category-3{
+
+	height: 12rem;
+	width: 18rem;
+	background-image: url("Images/Electronic-Music.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.category-name{
+
+	margin-top: 10vh;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 100px;
+}
+
+
+/*Latest-English Section*/
+
+#Latest-English div{
+
+	margin: 1.1vh;
+}
+
+#Latest-English div img{
+
+	height: 9rem;
+	width: 9rem;
+}
+
+#Latest-English div img:hover
+{
+	box-shadow: 0px 0px 6px 1px white;
+}
+
+#Latest-English div audio{
+
+	height: 1.2rem;
+	width: 7rem;
+}
+
+
+/*Latest-Hindi Section*/
+
+#Latest-Hindi div{
+
+	margin: 1.1vh;
+}
+
+#Latest-Hindi div img{
+
+	height: 9rem;
+	width: 9rem;
+}
+
+#Latest-Hindi div img:hover
+{
+	box-shadow: 0px 0px 6px 1px white;
+}
+
+#Latest-Hindi div audio{
+
+	height: 1.2rem;
+	width: 7rem;
+}
+
+
+/*Latest-Punjabi Section*/
+
+#Latest-Punjabi div{
+
+	margin: 1.1vh;
+}
+
+#Latest-Punjabi div img{
+
+	height: 9rem;
+	width: 9rem;
+}
+
+#Latest-Punjabi div img:hover
+{
+	box-shadow: 0px 0px 6px 1px white;
+}
+
+#Latest-Punjabi div audio{
+
+	height: 1.2rem;
+	width: 7rem;
+}
+
+
+/*For Aside Section Responsiveness*/
+
+#responsive-button {
+	display: none;
+	z-index: 4;
+	position: fixed;
+	right: 0%;
+	top: 20%;
+	color: white;
+	font-size: 21px;
+	font-weight: 700;
+	width: 7rem;
+	height: 3rem;
+	text-align: center;
+	border: none;
+	box-shadow: 0px 0px 2px 1px white;
+	background-image: linear-gradient(45deg, red -50%, blue 150%);
+}
+
+
+/*BODY ASIDE SECTION*/
+
+aside{
+
+	width: 22%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 6rem;
+}
+
+
+/*Aside Section Heading*/
+.aside-section-heading{
+
+	width: 100%;
+	color: white;
+	font-family: serif;
+	font-size: 25px;
+	font-weight: 700;
+	margin-left: 2rem;
+	position: relative;
+}
+
+.aside-section-heading span select{
+
+	margin-left: 10rem;
+	position: absolute;
+	font-size: 0.8rem;
+	border-radius: 4px;
+	color: #3ec7a9;
+	background-color: #0e0e2e;
+	border: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+
+/*Aside Section Body*/
+.aside-section-body{
+
+	width:100%;
+	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+/*Queue*/
+#Queue-list li{
+
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	position: relative;
+}
+
+#Queue-list li img{
+
+	height: 3rem;
+	width: 3rem;
+	margin-left: -11rem;
+	vertical-align: middle;
+}
+
+#Queue-list span{
+
+	position: absolute;
+	top: 0.2rem;
+	left: 3rem;
+	text-align: left;
+	margin-left: 1rem;
+}
+
+/* Like symbol */
+
+#Queue-list li div{
+
+	position: absolute;
+	display: inline;
+	margin-left: 14rem;
+	margin-top: 0.4rem;
+	font-size: 1.1rem;
+}
+
+#Queue-list li div:hover{
+
+	color: red;
+}
+
+
+/*BOTTOM MUSIC PLAYER*/
+
+.bottom-music-body{
+
+	width:100%;
+	height: auto;
+	color: white;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+}
+
+#player-container{
+
+	height: 4.2rem;
+	width: 100%;
+	background-color: #282828;
+	position: fixed;
+	bottom: -0.5rem;
+	margin-left: -2.3rem;
+}
+
+#player-container div img{
+
+	height: 3.2rem;
+	width: 3.2rem;
+	margin-left: 5rem;
+	margin-top: 0.1rem;
+	vertical-align: middle;
+	position: relative;
+}
+
+#player-container span{
+
+	position: absolute;
+	top: 0.4rem;
+	left: 6rem;
+	margin-left: 4rem;
+	margin-top: 0.2rem;
+	letter-spacing: 0.1rem;
+}
+
+#symbols div{
+
+	position: absolute;
+	margin-left: 15rem;
+	margin-top: -3rem;
+	font-size: 0.8rem;
+}
+
+#sym-add i{
+
+	margin-left: 2rem;
+}
+
+#sym-pause i{
+
+	margin-left: 35rem;
+	margin-top: -0.7rem; 
+	font-size: 1.8rem;
+}
+
+#sym-forward i{
+
+	margin-left: 40rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;
+}
+
+#sym-backward i{
+
+	margin-left: 31rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;
+}
+
+#sym-random i{
+
+	margin-left: 27rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;
+}
+
+#sym-repeat i{
+
+	margin-left: 44rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;	
+}
+
+#symbols div img{
+
+	margin-left: 27.4rem; 
+	margin-top: -0.9rem;
+	height: 5.6rem;
+	width: 17rem;
+}
+
+#start-time{
+
+	font-size: 0.8rem; 
+	position: absolute; 
+	left: 28.4rem; 
+	top: 5.9rem;
+}
+
+#end-time{
+
+	font-size: 0.8rem; 
+	position: absolute; 
+	left: 43.6rem; 
+	top: 5.9rem;
+}
+
+#sym-music i{
+
+	margin-left: 65rem;
+	margin-top: -0.1rem;
+}
+
+#sym-volume i{
+
+	margin-left: 67rem;
+	margin-top: -0.1rem;
+}
+
+#sym-expand i{
+
+	margin-left: 73rem;
+	margin-top: 0.1rem;
+}
+
+#symbols span img{
+
+	margin-left: 73.7rem; 
+	margin-top: -0.2rem;
+	height: 3rem;
+	width: 5.5rem;
+}

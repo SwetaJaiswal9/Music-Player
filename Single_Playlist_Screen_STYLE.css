@@ -1,0 +1,590 @@
+body{
+
+	background-image: url("Images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*BODY HEADER*/
+
+#top-bar{
+
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	color: white;
+	font-family: serif;
+	font-weight: 300;
+	font-size: 1.05rem;
+	background-color:  #121f53;
+	margin-top: -0.5rem;
+	margin-left: -0.5rem;
+	z-index: 2;
+}
+
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#Logo{
+
+	margin-top: 0.6rem;
+	margin-left: 1.8rem;
+}
+
+#Logo img{
+
+	height: 3.1rem;
+	width: 3.1rem;
+	animation: rotating 1s ease-in-out infinite;
+}
+
+#music_player_name{
+
+	height: 35px;
+	width: 170px;
+	margin-left: 0.2rem;
+	margin-top: 1.5rem;
+}
+
+#Favourites{
+
+	margin-left: 13rem;
+	margin-top: 1.5rem;
+}
+
+#Favourites a{
+
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-size: 19px;
+}
+
+#Search-Bar{
+
+	margin-left: 22rem;
+	margin-top: 1.4rem;
+}
+
+input[type="text"]{
+
+	background-color: white;
+	border-radius: 4px;
+	width: 13rem;
+	height: 1.5rem;
+	border: none;
+	color: black;
+	font-weight: 600;
+}
+
+@keyframes ringBell{
+
+	0%{
+		transform: rotate(-15deg);
+	}
+	50%{
+		transform: rotate(15deg);
+	}
+	100%{
+		transform: rotate(-15deg);
+	}
+}
+
+#Notification-bell img{
+
+	height: 44px;
+	width: 44px;
+	margin-left: 6rem;
+	margin-top: 1rem;
+	animation: ringBell 0.5s ease-in-out infinite;
+}
+
+#Login{
+
+	margin-left: 6rem;
+	margin-top: 0.4rem;
+}
+
+#Login img{
+
+	height: 3.4rem;
+	width: 3.4rem;
+	border-radius: 50%;
+}
+
+
+/*BODY MAIN*/
+
+main{
+
+	width: 68%;
+	display: inline-block;
+}
+
+
+/*Sections*/
+
+section{
+
+	width:auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 3vh;
+}
+
+.section-body{
+
+	width:100%;
+	height: auto;
+	color: white;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+}
+
+
+/*About Artist Section */
+
+#About-Artist{
+
+	background-color: #16164d;
+	margin-top: 10rem;
+	margin-left: 4rem;
+}
+
+#About-Artist div{
+
+	display: inline;
+}
+
+#About-Artist div img{
+
+	height: 22rem;
+	width: 22rem;
+	position: relative;
+}
+
+#About-Artist div p{
+
+	height: auto;
+	width: 30rem;
+	position: absolute;
+	top: 18rem;
+	left: 30rem;
+	color: lightgrey;
+	margin-left: -0.1rem;
+}
+
+
+/*Artist Name*/
+
+.Artist-Name{
+
+	vertical-align: top;
+	font-size: 2.3rem;
+	font-weight: 700px;
+	position: absolute;
+	margin-left: 3rem;
+	margin-top: 3rem;
+}
+
+#Artist-Loc{
+
+	font-size: 0.9rem;
+	color: lightgrey;
+	margin-left: 3.6rem;
+	margin-top: 5.7rem;
+}
+
+
+/*Play All Button*/
+
+#play-button button{
+
+	background-image: linear-gradient(to right, blue, purple , red 130% );
+	border: none;
+	height: 3rem;
+	width: 9rem;
+	padding: 3px;
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	margin-top: 15rem;
+	margin-left: 3.6rem;
+}
+
+
+/*Other elements*/
+
+#follow{
+
+	position: absolute;
+	font-size: 1.1rem;
+	color: white;
+	margin-left: 16rem;
+	margin-top: 16rem;
+}
+
+#followers{
+
+	position: absolute;
+	font-size: 0.7rem;
+	color: lightgrey;
+	margin-left: 30rem;
+	margin-top: 4rem;
+}
+
+#album{
+
+	position: absolute;
+	font-size: 0.8rem;
+	color: lightgrey;
+	margin-left: 3.7rem;
+	margin-top: 18.6rem;
+}
+
+
+/*Play All Songs Section */
+
+.Play-song-list li{
+
+	width: 100%;
+	height: 5rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	position: relative;
+	background-color: #1e1f29;
+}
+
+.Play-song-list li:hover{
+
+	background-color: #313445;
+}
+
+.Play-song-list li img{
+
+	height: 3.5rem;
+	width: 3.5rem;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	vertical-align: middle;
+}
+
+.Play-song-list span{
+
+	position: absolute;
+	top: 1rem;
+	left: 5rem;
+	text-align: left;
+	margin-left: 1.5rem;
+	margin-top: 0.7rem;
+}
+
+/* Like and Add symbols */
+
+.Play-song-list li div{
+
+	display: inline;
+	position: absolute;
+	margin-left: 47rem;
+	margin-top: 1.5rem;
+	font-size: 1.2rem;
+}
+
+#add-song{
+
+	margin-left: 50rem;
+}
+
+/*For Aside Section Responsiveness*/
+
+#responsive-button {
+	display: none;
+	z-index: 4;
+	position: fixed;
+	right: 0%;
+	top: 20%;
+	color: white;
+	font-size: 21px;
+	font-weight: 700;
+	width: 7rem;
+	height: 3rem;
+	text-align: center;
+	border: none;
+	box-shadow: 0px 0px 2px 1px white;
+	background-image: linear-gradient(45deg, red -50%, blue 150%);
+}
+
+/*BODY ASIDE SECTION*/
+
+aside{
+
+	width: 22%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 6rem;
+}
+
+
+/*Sections*/
+
+#Queue1{
+
+	margin-top: 1rem;
+}
+
+#Queue2{
+
+	margin-top: 0.5rem;
+}
+
+
+/*Aside Section Heading*/
+
+.aside-section-heading{
+
+	width: 100%;
+	color: white;
+	font-family: serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-left: 1rem;
+	position: relative;	
+}
+
+.aside-section-heading span{
+
+	width: 40%;
+	margin-left: 9.8rem;
+	margin-top: 0.8rem;
+	position: absolute;
+	font-size: 0.6rem;
+	color: lightgrey;
+}
+
+#Queue-2-heading span{
+
+	margin-left: 8.2rem;
+}
+
+
+/*Aside section Body*/
+
+.aside-section-body{
+
+	width:100%;
+	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+/* Queue */
+
+.Queue-list li{
+
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	position: relative;
+}
+
+.Queue-list li img{
+
+	height: 3rem;
+	width: 3rem;
+	margin-left: -11rem;
+	vertical-align: middle;
+}
+
+.Queue-list span{
+
+	position: absolute;
+	top: 0.2rem;
+	left: 3rem;
+	text-align: left;
+	margin-left: 1.5rem;
+}
+
+.Queue-list li div{
+
+	position: absolute;
+	display: inline;
+	margin-left: 14rem;
+	margin-top: 0.4rem;
+	font-size: 1.1rem;
+}
+
+
+/*Queue 1*/
+
+#Queue-1 li img{
+
+	height: 6rem;
+	width: 6rem;
+}
+
+#Queue-1 span{
+
+	margin-left: 4rem;
+}
+
+#Queue-1 li div select{
+
+	position: absolute;
+	top: -0.3rem;
+	left: -2rem;
+	margin-left: 1rem;
+	font-size: 0.7rem;
+	width: 1.4rem;
+}
+
+
+/*BOTTOM MUSIC PLAYER*/
+
+.bottom-music-body{
+
+	width:100%;
+	height: auto;
+	color: white;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+}
+
+#player-container{
+
+	height: 4.8rem;
+	width: 100rem;
+	background-color: #282828;
+	position: fixed;
+	bottom: -0.5rem;
+	margin-left: -2.3rem;
+}
+
+#player-container div img{
+
+	height: 3.2rem;
+	width: 3.2rem;
+	margin-left: 6rem;
+	margin-top: 0.5rem;
+	vertical-align: middle;
+	position: relative;
+}
+
+#player-container span{
+
+	position: absolute;
+	top: 0.4rem;
+	left: 6.7rem;
+	margin-left: 4rem;
+	margin-top: 0.2rem;
+	letter-spacing: 0.1rem;
+}
+
+#symbols div{
+
+	position: absolute;
+	margin-left: 16.6rem;
+	margin-top: -2.3rem;
+	font-size: 0.8rem;
+}
+
+#sym-add i{
+
+	margin-left: 2rem;
+}
+
+#sym-pause i{
+
+	margin-left: 35rem;
+	margin-top: -0.7rem; 
+	font-size: 1.8rem;
+}
+
+#sym-forward i{
+
+	margin-left: 40rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;
+}
+
+#sym-backward i{
+
+	margin-left: 31rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;
+}
+
+#sym-random i{
+
+	margin-left: 27rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;
+}
+
+#sym-repeat i{
+
+	margin-left: 44rem; 
+	margin-top: -1rem;
+	font-size: 1.1rem;	
+}
+
+#symbols div img{
+
+	margin-left: 27.4rem; 
+	margin-top: -0.8rem;
+	height: 5.6rem;
+	width: 17rem;
+}
+
+#start-time{
+
+	font-size: 0.8rem; 
+	position: absolute; 
+	left: 27.7rem; 
+	top: 5.3rem;
+}
+
+#end-time{
+
+	font-size: 0.8rem; 
+	position: absolute; 
+	left: 42.6rem; 
+	top: 5.3rem;
+}
+
+#sym-music i{
+
+	margin-left: 65rem;
+	margin-top: -0.1rem;
+}
+
+#sym-volume i{
+
+	margin-left: 67rem;
+	margin-top: -0.1rem;
+}
+
+#sym-expand i{
+
+	margin-left: 73rem;
+	margin-top: 0.1rem;
+}
+
+#symbols span img{
+
+	margin-left: 73.7rem; 
+	margin-top: -0.2rem;
+	height: 3rem;
+	width: 5.5rem;
+}
