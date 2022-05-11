@@ -10,5 +10,8 @@ There are 2 screens of Music Player:
 
 Both screens are connected via links.
 
-We can go from Home Screen to Single Playlist Screen by clicking on any Artist in Popular Artist Section, and
-We can go from Single Playlist Screen to Home Screen by clicking on the Logo.
+•	We can go from Home Screen to Single Playlist Screen by clicking on any Artist in Popular Artist Section.
+
+•	We can go from Single Playlist Screen to Home Screen by clicking on the Logo.
+
+
