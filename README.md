@@ -4,7 +4,7 @@
 
 Front End of a Music Player App (using HTML and CSS)
 
-#Features
+# Features
 
 There are 2 screens of Music Player:
 1) Home Screen
@@ -16,7 +16,7 @@ Both screens are connected via links.
 
 •	We can go from Single Playlist Screen to Home Screen by clicking on the Logo.
 
-#Some Points
+# Some Points
 
 •	Single Playlist Screen for popular artist 'Taylor Swift' has been created.
 
