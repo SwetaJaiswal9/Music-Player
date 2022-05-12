@@ -19,6 +19,7 @@ Both screens are connected via links.
 #Some Points
 
 •	Single Playlist Screen for popular artist 'Taylor Swift' has been created.
+
 •	Audios are just made using <audio> tags. Proper functionality of audio will require use of JavaScript and Backend.
 
 
