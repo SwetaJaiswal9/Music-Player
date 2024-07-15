@@ -12,7 +12,7 @@ There are 2 screens of Music Player:
 
 Both screens are connected via links.
 
-•	We can go from Home Screen to Single Playlist Screen by clicking on any Artist in Popular Artist Section. (For now Taylor Swift)
+•	We can go from Home Screen to Single Playlist Screen by clicking on any Artist (For now Taylor Swift) in Popular Artist Section.
 
 •	We can go from Single Playlist Screen to Home Screen by clicking on the Logo.
 
